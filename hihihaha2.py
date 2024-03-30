@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 
 class VideoPlayer:
     def __init__(self, video_file, master=None, width=100, height=100):
-        self.cap = cv2.VideoCapture(video_file)
+        self.cap = cv2.VideoCapture('C:\\Users\\Student\\Downloads\c\ats_video.mp4')
         self.master = master
         self.canvas = tk.Canvas(master, height=height, width=width)
         self.delay = int(1000 / self.cap.get(cv2.CAP_PROP_FPS))
